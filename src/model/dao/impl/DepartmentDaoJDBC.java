@@ -10,8 +10,8 @@ import java.util.List;
 
 import db.DB;
 import db.DbException;
-import mode.entities.Department;
 import model.dao.DepartmentDao;
+import model.entities.Department;
 
 public class DepartmentDaoJDBC implements DepartmentDao {
 

@@ -3,9 +3,9 @@ package application;
 import java.util.Scanner;
 import java.util.List;
 
-import mode.entities.Department;
 import model.dao.DaoFactory;
 import model.dao.DepartmentDao;
+import model.entities.Department;
 
 
 public class Program2 {
