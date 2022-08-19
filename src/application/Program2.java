@@ -14,17 +14,21 @@ public class Program2 {
 		
 		DepartmentDao departmentDao = DaoFactory.createDepartmentDao();
 		
-		System.out.println("===== TEST1: Insert department =====");
+		System.out.println("===== TEST1: insert department =====");
 		Department department = new Department(null, "Library");
 		departmentDao.insert(department);
 		System.out.println("Insert completed!");
 		
-		System.out.println("===== TEST2: Update department =====");
+		System.out.println("===== TEST2: update department =====");
 		department = new Department(6, "Teaching Management");
 		departmentDao.update(department);
 		System.out.println("Update completed!");
 		
-		System.out.println("===== TEST3: Delete department =====");
+		System.out.println("===== TEST3: findById =====");
+		department = departmentDao.findById(2);
+		System.out.println("Department found: " + department);
+		
+		System.out.println("===== TEST4: delete department =====");
 		System.out.println("Enter id for delete test");
 		int id = input.nextInt();
 		departmentDao.deleteById(id);
