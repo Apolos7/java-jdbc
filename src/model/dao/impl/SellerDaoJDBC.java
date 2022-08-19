@@ -91,13 +91,10 @@ public class SellerDaoJDBC implements SellerDao {
 			DB.closeStatement(st);
 		}
 		
-		
-		
-		
 	}
 
 	@Override
-	public void deleById(Integer id) {
+	public void deleteById(Integer id) {
 		PreparedStatement st = null;
 		
 		try {
