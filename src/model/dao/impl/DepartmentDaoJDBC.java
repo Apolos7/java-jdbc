@@ -6,14 +6,11 @@ import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;
 import java.util.ArrayList;
-import java.util.HashMap;
 import java.util.List;
-import java.util.Map;
 
 import db.DB;
 import db.DbException;
 import mode.entities.Department;
-import mode.entities.Seller;
 import model.dao.DepartmentDao;
 
 public class DepartmentDaoJDBC implements DepartmentDao {

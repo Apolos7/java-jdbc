@@ -1,10 +1,12 @@
 package application;
 
 import java.util.Scanner;
+import java.util.List;
 
 import mode.entities.Department;
 import model.dao.DaoFactory;
 import model.dao.DepartmentDao;
+
 
 public class Program2 {
 
@@ -28,7 +30,13 @@ public class Program2 {
 		department = departmentDao.findById(2);
 		System.out.println("Department found: " + department);
 		
-		System.out.println("===== TEST4: delete department =====");
+		
+		System.out.println("===== TEST4: findAll =====");
+		List<Department> list = departmentDao.findAll();
+		
+		list.forEach(System.out::println);
+		
+		System.out.println("===== TEST5: delete department =====");
 		System.out.println("Enter id for delete test");
 		int id = input.nextInt();
 		departmentDao.deleteById(id);
